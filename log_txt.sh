@@ -1,18 +1,14 @@
 #!/system/bin/sh
 
-# 保存先のディレクトリを設定
 LOG_DIR="/sdcard/command_logs"
 mkdir -p "$LOG_DIR"
 
-# 日付を取得
 DATE=$(date +"%Y-%m-%d")
 LOG_FILE="$LOG_DIR/${DATE}_commandLog.txt"
 
-# ログ開始
 echo "Command Test Log - $DATE" > "$LOG_FILE"
 echo "-------------------------------" >> "$LOG_FILE"
 
-# 実行するコマンドのリスト
 commands=(
     "cat /proc/cpuinfo"
     "ps"
@@ -50,7 +46,6 @@ commands=(
 
 )
 
-# コマンド実行
 for cmd in "${commands[@]}"; do
     echo "----------- $cmd -----------" >> "$LOG_FILE"
     $cmd >> "$LOG_FILE" 2>&1
