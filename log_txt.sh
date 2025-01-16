@@ -15,6 +15,8 @@ commands=(
     "getprop"
     "getenforce"
     "dumpsys"
+    "cat /proc/binder/proc/*"
+    "cat /proc/binder/stats"
     "cat /proc/last_kmsg"
     "cat /sys/class/net/wlan0/address"
     "cat /proc/meminfo"
