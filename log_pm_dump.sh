@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-OUTPUT_DIR="/sdcard"
+OUTPUT_DIR="/data/local/tmp"
 DATE=$(date +%Y%m%d_%H%M%S)
 OUTPUT_FILE="${OUTPUT_DIR}/${DATE}.txt"
 
