@@ -20,7 +20,7 @@ for package in $packages; do
     echo "-----------------------------" >> $OUTPUT_FILE
     echo "------$package------" >> $OUTPUT_FILE
 
-    # pm dump の内容を追加
+
     pm dump $package >> $OUTPUT_FILE
     echo "" >> $OUTPUT_FILE
 done
