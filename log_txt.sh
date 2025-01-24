@@ -45,6 +45,11 @@ commands=(
     "pm list packages"
     "pm list permissions"
     "pm list users"
+    "pm list libraries"
+    "pm list features"
+    "pm list staged-sessions"
+    "pm get-max-users"
+    "pm get-max-running-users"
 
 )
 
